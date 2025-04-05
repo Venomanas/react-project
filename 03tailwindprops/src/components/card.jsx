@@ -2,7 +2,8 @@
 
 import React from 'react'
 
-function Card() {
+function Card({username =": anonymus ", post ="Not assigned "}) {
+  // console.log(props)
   return (
     <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto">
         <img
@@ -11,6 +12,10 @@ function Card() {
       />
       <h2 className="text-2xl font-bold text-gray-800 mb-2">This is a Card</h2>
       <p className="text-gray-600">Tailwind is working fine 🎉</p>
+      <p className='text-gray-700'>namibia desert {post}</p>
+      <div className="text-slate-700 dark:text-slate-500"> photographer
+        {username }
+      </div>
     </div>
   )
 }
